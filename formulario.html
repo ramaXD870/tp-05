@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <h1>Formulario empresa de videojuegos</h1>
+<form action="/encusta">
+
+    <fieldset>
+        <legend>Datos</legend>
+
+        <label for="nombre">Ingresa tu nombre y apellido</label>
+        <input type="text" name="nombre" id="nombre">
+
+
+        <label for="em">Ingresa tu correo electronico</label>
+        <input type="email" name="em" id="em">
+
+        <label for="fe">Ingresa tu fecha de nacimiento</label>
+        <input type="date" name="fe" id="fe">
+
+        <label for="dni">Ingresa tu DNI</label>
+        <input type="number" name="dni" id="dni">
+
+        <label for="num">Ingresa tu numero de telefono</label>
+        <input type="tel" name="num" id="num">
+
+        <label for="juego">tipo de juego:</label> <!-- el valor de for es el ID del select-->
+        <select id="juego" name="juego" required> <!-- selector de opciones -->
+            <option value="braw">Brawl Star</option>
+            <!-- aquí si hay valor en value, es lo que se manda al servidor: estudiante-->
+            <option value="free">Free Fire</option> <!-- valor enviado profesor-->
+            <option value="S2">Standoff 2</option> <!-- valor enviado trabajador -->
+        </select>
+
+
+        <label for="id">ingrese su numero de id </label>
+        <input type="text" name="id" id="id">
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Redes sociales</legend>
+
+
+        <label for="usu">Ingresa tu nombre de usuario de X</label>
+        <input type="text" name="usu" id="usu">
+
+
+        <label for="rio">Ingresa tu nombre de usuario de instagram</label>
+        <input type="text" name="rio" id="rio">
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Ubicacion </legend>
+
+        <label for="cid">Ingrese su ciudad</label>
+        <input type="text" name="cid" id="cid">
+
+
+        <label for="juego">provincia:</label>
+        <select id="juego" name="juego" required>
+            <option value="fue">tierra del fuego</option>
+            <option value="cruz">Santa Cruz</option>
+            <option value="chu">Chubut</option>
+            <option value="rio">Rio Negro</option>
+            <option value="neu">Neuquen</option>
+            <option value="pam">La pampa</option>
+            <option value="B.A">Buenos Aires</option>
+            <option value="men">mendoza</option>
+            <option value="luis">San luis</option>
+            <option value="cor">Cordoba</option>
+            <option value="fe">Santa fe</option>
+            <option value="rios">Entre Rios</option>
+            <option value="cor">Corrientes</option>
+            <option value="mis">Misiones</option>
+            <option value="Juan">San Juan</option>
+            <option value="rioj">La rioja</option>
+            <option value="cata">Catamarca</option>
+            <option value="tuc">Tucuman</option>
+            <option value="santi">Santiago Del Estero</option>
+            <option value="cha">Chaco</option>
+            <option value="for">Formosa</option>
+            <option value="Ju">JuJuy</option>
+            <option value="sal">Salta</option>
+        </select>
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Deportes</legend>
+
+        <label for="juego">tipo de juego:</label>
+        <select id="juego" name="juego" required>
+            <option value="nat">natacion</option>
+            <option value="ten">tenis</option>
+            <option value="bas">basketball</option>
+        </select>
+
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+
+</form>
+   
+
+</body>
+
+</html>
